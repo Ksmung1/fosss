@@ -77,7 +77,7 @@ function Body() {
               color: "white",
               margin: "0 0 30px 0 ",
               fontWeight: 10,
-              letterSpacing: "2px",
+              letterSpacing: "3px",
             }}
           >
             all or nothing
