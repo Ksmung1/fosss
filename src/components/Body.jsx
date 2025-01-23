@@ -17,12 +17,12 @@ function Body() {
 
   // Effect to show Typewriter first, then main content after 6 seconds
   useEffect(() => {
-    const hasSeenTypewriter = localStorage.getItem("hasSeenTypewriter");
+    const hasSeenTypewriter = sessionStorage.getItem("hasSeenTypewriter");
   
     if (!hasSeenTypewriter) {
       const timer = setTimeout(() => {
         setActive(true);
-        localStorage.setItem("hasSeenTypewriter", "true");
+        sessionStorage.setItem("hasSeenTypewriter", "true");
       }, 6000);
   
       return () => clearTimeout(timer);
@@ -30,6 +30,7 @@ function Body() {
       setActive(true);
     }
   }, []);
+  
   
 
   // Handle the click event for the image

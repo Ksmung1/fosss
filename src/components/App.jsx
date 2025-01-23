@@ -41,6 +41,7 @@ import OngoingCourses from "./OngoingCourses";
 import ArticleCalendar from "./ArticleCalendar";
 import Poster from "./Poster";
 import ScrollToTop from "./ScrollToTop";
+import Typewriter from "./Typewriter";
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
                     <Route path="*" element={<FOUR_OU_FOUR />} />
         <Route path="/physics" element={<FOUR_OU_FOUR />} />
         <Route path="/" element={<><Navbar /><Body/></>} />
+        <Route path='/type' element={<><Typewriter></Typewriter></>}></Route>
         <Route path="/exams" element={<Exams />} />
         {/* <Route path="/articles/:articleName" element={<ArticleCard />} /> */}
         <Route path="/all-articles" element={<AllArticles />} />
