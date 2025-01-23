@@ -13,7 +13,7 @@ const OngoingCourses = () => {
           <div className="col indie-flower">40 Days Exam Booster Course 
                     <span  className='status-badge ongoing-badge'>Ongoing</span>
           </div>
-          <div className="col indie-flower">Class X Master Course
+          <div className="col indie-flower">Class X Masterclass
                     <span className='status-badge coming-soon-badge'>Coming soon</span>
           </div>
         </div>
@@ -26,7 +26,7 @@ const OngoingCourses = () => {
            <div className="col indie-flower">40 Days Exam Booster Course
            <span  className='status-badge ongoing-badge'>Ongoing</span>
            </div>
-           <div className="col indie-flower">Class XII Master Course
+           <div className="col indie-flower">Class XII Masterclass
            <span  className='status-badge coming-soon-badge'>Coming soon</span>
            </div>
          </div>
