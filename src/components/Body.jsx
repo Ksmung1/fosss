@@ -80,7 +80,7 @@ function Body() {
               letterSpacing: "2px",
             }}
           >
-            Next Generation
+            all or nothing
           </p>
 
           <div className="search-bar-container">
