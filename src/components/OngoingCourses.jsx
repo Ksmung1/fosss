@@ -23,10 +23,10 @@ const OngoingCourses = () => {
            <>
            <h1 className='mid'>CLASS XII</h1>
          <div className='classx flex col gap'>
-           <div className="col">40 Days Exam Booster Course
+           <div className="col indie-flower">40 Days Exam Booster Course
            <span  className='status-badge ongoing-badge'>Ongoing</span>
            </div>
-           <div className="col">Class XII Booster Course
+           <div className="col indie-flower">Class XII Booster Course
            <span  className='status-badge coming-soon-badge'>Coming soon</span>
            </div>
          </div>
@@ -35,11 +35,11 @@ const OngoingCourses = () => {
        {location.pathname === '/defencecourse' && (
         <>
         <h1 className='mid'>DEFENCE COURSE</h1>
-      <div className='classx flex col gap'>
-        <div className="col">40 Days Exam Booster Course
+      <div className='classx flex col gap '>
+        <div className="col indie-flower">40 Days Exam Booster Course
         <span  className='status-badge ongoing-badge'>Ongoing</span>
         </div>
-        <div className="col">Class X Booster Course
+        <div className="col indie-flower">Class X Booster Course
         <span  className='status-badge coming-soon-badge'>Coming soon</span>
         </div>
       </div>
@@ -49,10 +49,10 @@ const OngoingCourses = () => {
          <>
          <h1 className='mid'>NEET</h1>
        <div className='classx flex col gap'>
-         <div className="col">40 Days Exam Booster Course
+         <div className="col indie-flower">40 Days Exam Booster Course
          <span  className='status-badge ongoing-badge'>Ongoing</span>
          </div>
-         <div className="col">NEET Masterclass
+         <div className="col indie-flower">NEET Masterclass
          <span  className='status-badge coming-soon-badge'>Coming soon</span>
          </div>
        </div>

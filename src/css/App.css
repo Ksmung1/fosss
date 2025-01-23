@@ -102,10 +102,10 @@ body {
 .course-options .item {
   position: relative;
   flex: 1;
+  border-radius: 7px;
   text-align: center;
   padding: 7px 5px;
   border: 2px solid #000;
-  border-radius: 10px;
   cursor: pointer;
   background-color: #000;
   box-sizing: border-box;
@@ -238,13 +238,23 @@ body {
   padding: 10px;
 }
 .educafe-link {
+}
+.deep-link {
   color: white;
   margin: 20px;
 }
-.educafe-link h1 {
-  font-size {
-  }
+
+.deep-link .info {
+  background-color: black;
+  border: 1px solid white;
+  /* box-shadow: 0 0 10px #fe5a1d, 0 0 20px rgb(182, 68, 27); */
+  padding: 20px 20px 10px;
+  max-width: 600px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
 }
+
 .educafe-link .info {
   background-color: rgba(
     0,
@@ -252,18 +262,21 @@ body {
     0,
     0.1
   ); /* Green background with transparency */
-  border: 2px solid rgba(0, 255, 0, 0.8); /* Solid neon green border */
+  border: 1px solid rgba(0, 255, 0, 0.8); /* Solid neon green border */
   padding: 20px;
   max-width: 600px;
-  margin: 20px auto;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.5); /* Neon green glow effect */
+  margin: 50px 0 0;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.5); /* Neon green glow effect */
   color: white;
   font-size: 18px;
   text-align: center;
 }
 .educafe-link .info h1 {
   font-size: 20px;
+}
+.deep-link .info h1,
+p {
+  margin: 0;
 }
 .educafe-link .info p {
   margin: 0;
@@ -273,6 +286,10 @@ body {
 }
 .educafe-link .info button {
   margin: 20px 0 0;
+}
+
+.deep-focus .info img {
+  width: 70px;
 }
 
 .navbar {
@@ -392,8 +409,8 @@ body {
 }
 
 .ongoingcourses .classx .col {
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   padding: 20px;
   cursor: pointer;
   position: relative;
@@ -442,7 +459,7 @@ body {
   margin: 0;
 }
 .founder {
-  margin: 80px 20px;
+  margin: 0px 20px;
   justify-content: center;
   gap: 50px;
   border-top: 1px solid white;
@@ -479,4 +496,48 @@ body {
 }
 .postContent img {
   width: 90%;
+}
+
+.loading {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fe5a1d;
+  padding: 0;
+}
+
+.loading span {
+  animation: blink 1.5s infinite;
+}
+
+.loading span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loading span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loading span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.loading span:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.loading span:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

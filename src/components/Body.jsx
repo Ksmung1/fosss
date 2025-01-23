@@ -107,16 +107,17 @@ function Body() {
 
           <PhotoGallery />
           <ArticleCalendar />
-          <div style={{ margin: "70px 20px" }}>
-          <img
-              style={{ width: "100%", border: "1px solid red" }}
-              src="/images/WhatsApp Image 2025-01-21 at 23.19.31_41e6be10.jpg"
-              alt=""
-            />
-         </div>
-     
-
-          <div className="educafe-link">
+          
+          <div className=" deep-link">
+            <div className="info">
+              <img style={{width: '80px'}} src={`${process.env.PUBLIC_URL}/images/deep-focus.png`} alt="" />
+              <h1 style={{fontSize:'1.8rem'}}>PROJECT DEEP FOCUS</h1>
+              <p onClick={() => (window.location.href = "https://edu-cafe.netlify.app/")}>
+                Launching soon
+              </p>
+              <p class="loading"><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span></p>
+              </div>
+            <div className="educafe-link" style={{}}>
             <div className="info">
               <img src={`${process.env.PUBLIC_URL}/images/coffee-cup.gif`} alt="" />
               <h1>EDUCAFE</h1>
@@ -127,9 +128,21 @@ function Body() {
               <button onClick={() => (window.location.href = "https://edu-cafe.netlify.app/")}>Visit</button>
             </div>
           </div>
+          </div>
+          <div style={{ margin: "70px 20px" }}>
+          <img
+              style={{ width: "100%", border: "1px solid red" }}
+              src="/images/WhatsApp Image 2025-01-21 at 23.19.31_41e6be10.jpg"
+              alt=""
+            />
+         </div>
+     
 
-        
+     
+
+
           <Slider />
+          
           <Founder />
 
           <div className="contacts">
