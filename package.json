@@ -23,6 +23,7 @@
     "browser-image-compression": "^2.0.2",
     "date-fns": "^4.1.0",
     "firebase": "^11.1.0",
+    "he": "^1.2.0",
     "ionicons": "^7.1.2",
     "moment": "^2.29.4",
     "pako": "^2.1.0",
