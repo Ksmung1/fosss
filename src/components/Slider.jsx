@@ -81,11 +81,7 @@ const Slider = () => {
         ))}
       </div>
 
-      {/* Manual controls */}
-      {/* <div className="controls">
-        <button onClick={prevSlide}>Prev</button>
-        <button onClick={nextSlide}>Next</button>
-      </div> */}
+      
     </div>
   );
 };

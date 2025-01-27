@@ -7,7 +7,7 @@ const Advertisement = () => {
           useEffect (()=>{
                     const timer = setInterval(()=>{
                               setActive((prev)=>!prev)
-                    },5000);
+                    },10000);
                     return ()=> clearInterval(timer);
           },[])
   return (
