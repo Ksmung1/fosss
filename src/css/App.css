@@ -502,7 +502,7 @@ p {
 }
 .postContent h1,
 h2 {
-  color: green;
+  color: purple;
   font-size: 20px;
 }
 .loading {
@@ -562,6 +562,7 @@ h2 {
   gap: 10px;
   text-align: center;
   justify-content: space-between;
+  padding: 5px 10px;
 }
 
 .advertisement .col {
