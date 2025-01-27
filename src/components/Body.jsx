@@ -7,6 +7,7 @@ import Slider from "./Slider";
 import Founder from "./Founder";
 import Typewriter from "./Typewriter";
 import ArticleCalendar from "./ArticleCalendar";
+import Advertisement from "./Advertisement";
 
 function Body() {
   const navigate = useNavigate();
@@ -55,6 +56,7 @@ function Body() {
         </>
       ) : (
         <>
+        <Advertisement></Advertisement>
           <img
             src={`${process.env.PUBLIC_URL}/images/target.gif`}
             alt="target"

@@ -548,3 +548,27 @@ h2 {
     opacity: 0;
   }
 }
+.advertisement {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background: purple;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  align-items: center;
+  gap: 5px;
+  height: 50px;
+}
+
+.advertisement .col {
+  padding: 10px;
+}
+
+.advertisement .col a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
