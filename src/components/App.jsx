@@ -17,7 +17,6 @@ import Subjects from './UPSC/Class/Subjects';
 import DefenceExam from './DefenceExams/DefenceExam';
 import ExamTable from './ExamTable/ExamTable';
 import News from './News/News';
-import CA from './CurrentAffairs/CA';
 import GeneralKnowledge from './GeneralAwareness/GeneralAwareness';
 import Syllabus from './Syllabus/Syllabus';
 import Educafe from './Educafe/Educafe';
@@ -34,14 +33,17 @@ import GoalDigger from "./GoalDigger";
 import GoalDiggerPage from "./GoalDiggerPage";
 import MonthView from "./MonthView";
 import ArticlePage from "./ArticlePage";
-//css
-import "../css/App.css";
-import "../css/props.css";
 import OngoingCourses from "./OngoingCourses";
 import ArticleCalendar from "./ArticleCalendar";
 import Poster from "./Poster";
 import ScrollToTop from "./ScrollToTop";
 import Typewriter from "./Typewriter";
+
+//css
+import "../css/App.css";
+import "../css/props.css";
+import "../css/Desktop.css"
+import Advertisement from "./Advertisement";
 
 function App() {
 
@@ -53,12 +55,12 @@ function App() {
                     <Routes>
                     <Route path="*" element={<FOUR_OU_FOUR />} />
         <Route path="/physics" element={<FOUR_OU_FOUR />} />
-        <Route path="/" element={<><Navbar /><Body/></>} />
+        <Route path="/" element={<div className="desktop"><Navbar /><Body/></div>} />
         <Route path='/type' element={<><Typewriter></Typewriter></>}></Route>
         <Route path="/exams" element={<Exams />} />
         {/* <Route path="/articles/:articleName" element={<ArticleCard />} /> */}
         <Route path="/all-articles" element={<AllArticles />} />
-        <Route path="/currentAffairs" element={<CA />} />
+        <Route path="/currentAffairs" element={<ArticleCalendar />} />
         <Route path="/rhauIAS" element={<CurrentAffairs />} />
         <Route path="/generalAwareness" element={<GeneralKnowledge />} />
         <Route path="/currentAffairs/:Year/:currentMonth" element={<CurrentMonthAffairs />} />
@@ -78,7 +80,7 @@ function App() {
         <Route path="/pdf-viewer/:classname" element={<PDFViewer />} />
         <Route path="/upExams" element={<UpExams />} />
         <Route path="/ab" element={<About />} />
-        <Route path="/soon" element={<div style={{ margin: '100px' }}> <h1 style={{ fontSize: '30px', color: '#fe5a1d' }}>COMING SOON</h1></div>} />
+        <Route path="/soon" element={<div className="soon"><Navbar/><Advertisement/> <h1 style={{ fontSize: '60px', color: '#fe5a1d' }}>COMING SOON</h1></div>} />
         <Route path="/core-elements" element={<CourseElement/>}></Route>
         <Route path="/course-roadmap" element={<CourseRoadmap/>}></Route>
         <Route path="/course-progress" element={<CourseProgress/>}></Route>

@@ -1,8 +1,15 @@
 import React from "react";
+import Navbar from "../Navbar";
+import Advertisement from "../Advertisement";
 import "./Table.css"
 function UpExams() {
           return (
+                    <>
+                                                  <Navbar></Navbar>
+                              <Advertisement></Advertisement>
+
                     <div className="upExams">
+
                               <h1>UPCOMING EXAMS</h1>
                               <div className="upExams-div">
                                         <table>
@@ -52,6 +59,7 @@ function UpExams() {
                                                   <p style={{ color: 'black', margin: '0', textAlign: 'center' }}>SSC Calendar-2024 <span style={{ fontStyle: 'italic', paddingLeft: '15px', textDecoration: 'underline' }}>Click to download</span></p>
                                         </div>  </a>
                     </div >
+                    </>
           )
 }
 

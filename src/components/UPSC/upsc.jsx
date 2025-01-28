@@ -1,30 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./upsc.css";
 import Card from "./Card";
 import subjectData from "./subjectData";
-import Loading from "../Loading/Loading";
+import Navbar from "../Navbar";
+import Advertisement from "../Advertisement";
 
 function Upsc() {
           // Add a state variable to control the visibility of the loading screen
-          const [isLoading, setIsLoading] = useState(true);
 
           // Use the useEffect hook to set a timeout for 5 seconds to hide the loading screen
-          useEffect(() => {
-                    const timer = setTimeout(() => {
-                              setIsLoading(false);
-                    }, 2000);
-
-                    // Clear the timeout when the component unmounts to prevent memory leaks
-                    return () => clearTimeout(timer);
-          }, []);
 
           return (
                     <div>
-                              {isLoading ? ( // Render the loading screen while isLoading is true
-                                        <Loading />
-                              ) : (
-                                        // Render the content when isLoading becomes false
-                                        <>
+                              <Navbar/>
+                              <Advertisement/>
+                                        <div className="upsc-ncert">
                                                   <h1 style={{ fontSize: "27px", fontWeight: '800', textAlign: "center", color: '#fe5a1d' }}>NCERT</h1>
                                                   <div className="exam-card-container">
                                                             {subjectData.map((subjectData, index) => (
@@ -36,8 +26,8 @@ function Upsc() {
                                                                       ></Card>
                                                             ))}
                                                   </div>
-                                        </>
-                              )}
+                                        </div>
+                              
                     </div>
           );
 }

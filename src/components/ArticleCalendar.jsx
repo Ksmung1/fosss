@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "../css/CalendarStyle.css";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
+import Advertisement from "./Advertisement";
 
 // Normalize Date to YYYY-MM-DD without time zone conversion
 const normalizeDate = (date) => {
@@ -16,6 +18,7 @@ const normalizeDate = (date) => {
 
 const ArticleCalendar = () => {
   const navigate = useNavigate();
+  const location = useLocation(); // Get the current location
   const [date, setDate] = useState(new Date());
   const [articles, setArticles] = useState({});
 
@@ -23,13 +26,12 @@ const ArticleCalendar = () => {
   const handleDateClick = (date) => {
     const formattedDate = normalizeDate(date);
     const article = articles[formattedDate];  // Get the article for that day
-    
+
     if (article) {
       // Pass the full article object to the ArticlePage component
       navigate('/articles', { state: { article } });
-    } 
+    }
   };
-
 
   useEffect(() => {
     axios.get('https://focus-backend-xxar.onrender.com/focus/articles')
@@ -49,8 +51,10 @@ const ArticleCalendar = () => {
   }, []);
 
   return (
-    <div className="calendar-container">
-      <h1 style={{ color: "#fe5a1d", fontSize:'2rem'}}>Current Affairs</h1>
+    <div className={`calendar-container ${location.pathname === "/currentAffairs" ? "current-affairs-page" : ""}`}>
+      <div className="desk-top"><Navbar /></div>
+      <Advertisement />
+      <h1 style={{ color: "#fe5a1d", fontSize: '2rem' }}>Current Affairs</h1>
       <Calendar
         showNeighboringMonth={false}
         onChange={setDate}

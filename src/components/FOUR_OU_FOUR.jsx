@@ -1,5 +1,7 @@
 import React from "react";
 import {useNavigate } from 'react-router-dom';
+import Navbar from "./Navbar";
+import Advertisement from "./Advertisement";
 
 function FOUR_OU_FOUR() {
           const navigate = useNavigate();
@@ -8,6 +10,9 @@ function FOUR_OU_FOUR() {
                     navigate(-1)
           }
           return (
+                    <>
+                   <Navbar></Navbar>
+                   <Advertisement></Advertisement>
                     <div className="Four-o-Four">
                               <div className="four-o-four">
                                         <h1>404</h1>
@@ -18,6 +23,7 @@ function FOUR_OU_FOUR() {
                                         </div>
                               </div>
                     </div>
+                    </>
           )
 }
 

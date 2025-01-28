@@ -2,6 +2,8 @@ import React from "react";
 import newsData from "./newsData";
 import Card from "./Card";
 import "./News.css"
+import Navbar from "../Navbar";
+import Advertisement from "../Advertisement";
 import { Link } from "react-router-dom";
 
 function News() {
@@ -11,8 +13,9 @@ function News() {
 
           return (
                     <div>
-
-                              <div style={{ margin: '50px 30px' }}>
+                              <Navbar></Navbar>
+<Advertisement></Advertisement>
+                              <div className="news-india" style={{ margin: '50px 30px' }}>
                                         <h1 style={{ fontSize: "27px", fontWeight: '800', textAlign: "center", color: '#fe5a1d' }}>NEWSPAPERS</h1>
                                         <div className="exam-card-container">
                                                   {newsData.map((newsData, index) => (

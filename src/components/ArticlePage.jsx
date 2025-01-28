@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
-
+import Navbar from './Navbar';
+import Advertisement from './Advertisement';
 const ArticlePage = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -26,7 +27,10 @@ const ArticlePage = () => {
   }
 
   return (
-    <div style={{ margin: '20px' }}>
+    <>
+          <Navbar></Navbar>
+      <Advertisement></Advertisement>
+    <div className='article-content-page' style={{ margin: '20px' }}>
       <h1 className='mid' style={{fontSize: '2rem'}}>{article.title}</h1>
       <p className='mid'>
   <strong>
@@ -40,6 +44,7 @@ const ArticlePage = () => {
       <div className='postContent' dangerouslySetInnerHTML={{ __html: article.content }} />
       <button onClick={() => navigate(-1)} style={backButtonStyle}>⬅ Back</button>
     </div>
+    </>
   );
 };
 

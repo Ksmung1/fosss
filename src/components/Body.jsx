@@ -57,10 +57,12 @@ function Body() {
       ) : (
         <>
         <Advertisement></Advertisement>
+        <div className="desk-1">
           <img
             src={`${process.env.PUBLIC_URL}/images/target.gif`}
             alt="target"
-            style={{ margin: "80px 0 0 0", cursor: "pointer" }}
+            className="focus-image"
+            style={{ cursor: "pointer" }}
             onClick={handleImageClick}
           />
           <h1
@@ -84,7 +86,7 @@ function Body() {
           >
             all or nothing
           </p>
-
+          </div>
           <div className="search-bar-container">
             <SearchBar setResults={setResults} />
             <SearchResults results={results} />
@@ -132,7 +134,7 @@ function Body() {
             </div>
           </div>
           </div>
-          <div style={{ margin: "70px 20px" }}>
+          <div className="focus-red-image" style={{ margin: "70px 20px" }}>
           <img
               style={{ width: "100%", border: "1px solid red" }}
               src="/images/WhatsApp Image 2025-01-21 at 23.19.31_41e6be10.jpg"

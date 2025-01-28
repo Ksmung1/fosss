@@ -1,9 +1,13 @@
 import React from "react";
+import Navbar from "../Navbar";
+import Advertisement from "../Advertisement";
 import "./About.css"
 
 function About() {
           return (
                     <div className="about" style={{ padding: '20px', color: 'white' }}>
+                              <Navbar></Navbar>
+                              <Advertisement></Advertisement>
                               <h1>ABOUT</h1>
                               <p>
                                         FOCUS Academy is a premier educational institution dedicated to guiding and preparing aspiring individuals for success in various competitive examinations, including UPSC CSE, SSC, Banking,  NDA, CDS, CAPF, AFCAT,  NEET and JEE. <p></p> We offer a comprehensive and holistic approach to education that goes beyond academics, focusing on personality development, physical fitness, interview preparation, and overall growth.

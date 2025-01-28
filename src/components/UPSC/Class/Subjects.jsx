@@ -3,13 +3,15 @@ import { useParams } from "react-router-dom";
 import ClassCard from "./ClassCard";
 import classData from "./classData";
 import "../upsc.css";
+import Navbar from "../../Navbar";
+import Advertisement from "../../Advertisement";
 
 function SubjectContent({ subject }) {
           if (classData[subject]) {
                     const Items = classData[subject];
                     const subj = subject
                     return (
-                              <div style={{ marginTop: '70px' }}>
+                              <div className="ncert-class" >
                                         <h1 style={{ margin: '20px', fontSize: '25px', fontWeight: '700' }}>{subject.toUpperCase()}</h1>
                                         <div className="class-card-container">
                                                   {Items.map((item, index) => (
@@ -32,7 +34,12 @@ function SubjectContent({ subject }) {
 function Subjects() {
           const { subject } = useParams();
 
-          return <SubjectContent subject={subject} />;
+          return ( <div>
+                    <div className="desk-top">                    <Navbar></Navbar>
+                    </div>
+                    <Advertisement></Advertisement>
+                    <SubjectContent subject={subject}/>
+                    </div>);
 }
 
 export default Subjects;
