@@ -42,6 +42,7 @@ import ArticleCalendar from "./ArticleCalendar";
 import Poster from "./Poster";
 import ScrollToTop from "./ScrollToTop";
 import Typewriter from "./Typewriter";
+import DeepFocus from "./DeepFocus";
 
 function App() {
 
@@ -94,6 +95,7 @@ function App() {
         <Route path="/calendar" element={<ArticleCalendar />} />
         <Route path="/secret" element={<Poster />} />
         <Route path="/articles" element={<ArticlePage />} />
+        <Route path="/deepfocus" element={<DeepFocus/>} ></Route>
 
   
 

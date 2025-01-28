@@ -7,7 +7,7 @@ import Slider from "./Slider";
 import Founder from "./Founder";
 import Typewriter from "./Typewriter";
 import ArticleCalendar from "./ArticleCalendar";
-
+import DeepFocus from "./DeepFocus";
 function Body() {
   const navigate = useNavigate();
   const [results, setResults] = useState([]);
@@ -118,6 +118,8 @@ function Body() {
               </p>
               <p class="loading"><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span></p>
               </div>
+
+              <DeepFocus />
             <div className="educafe-link" style={{}}>
             <div className="info">
               <img src={`${process.env.PUBLIC_URL}/images/coffee-cup.gif`} alt="" />
