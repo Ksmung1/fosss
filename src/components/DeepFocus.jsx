@@ -1,6 +1,7 @@
 import React from 'react'
 
 const DeepFocus = () => {
+          const defaultMessage = encodeURIComponent("")
   return (
     <div className='deepfocus mid flex' >
       
@@ -32,6 +33,17 @@ const DeepFocus = () => {
           <li>
                     <div className="col">
                               <p>Competency Based Questions</p>
+                    </div>
+          </li>
+          <li>
+                    <div className="col">
+                              <p>NCERT</p>
+                    </div>
+          </li>
+          <li style={{marginTop: '10px'
+          }}>
+                    <div className="col">
+                              <button style={{cursor: 'pointer'}} onClick={()=> window.open(`https://wa.me/+918974808279?text=${defaultMessage}`)}>Join our Community</button>
                     </div>
           </li>
        </ul>

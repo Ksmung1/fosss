@@ -551,7 +551,7 @@ h2 {
 .deepfocus {
   justify-content: center;
   flex-direction: column;
-  margin: 20px 0;
+  margin: 45px 0 20px;
 }
 .deepfocus h1,
 h2 {
