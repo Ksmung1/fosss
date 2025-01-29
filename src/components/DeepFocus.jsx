@@ -3,9 +3,9 @@ import React from 'react'
 const DeepFocus = () => {
           // const defaultMessage = encodeURIComponent("")
   return (
-    <div className='deepfocus flex' onClick={()=>window.location.href='https://t.me/+mNLn7FyeC2sxZjBl'}>
+    <div className='deepfocus flex' onClick={()=>window.location.href='https://t.me/focus10thexam'}>
           
-       
+       <img className='focus-link' src="./images/focus-link.png" alt="" />
 
        <div className='flex deepfocus-heading'>
          <div className='flex gap'>

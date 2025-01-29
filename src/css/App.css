@@ -639,3 +639,9 @@ h1.deepfocus-button {
   margin: 0;
   letter-spacing: 4px;
 }
+img.focus-link {
+  position: absolute;
+  left: 300px;
+  top: 160px;
+  width: 70px;
+}
