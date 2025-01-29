@@ -3,52 +3,64 @@ import React from 'react'
 const DeepFocus = () => {
           // const defaultMessage = encodeURIComponent("")
   return (
-    <div className='deepfocus mid flex' >
-      
-       <ul>
-       <div>
+    <div className='deepfocus flex' onClick={()=>window.location.href='https://t.me/+mNLn7FyeC2sxZjBl'}>
+          
+       
+
+       <div className='flex deepfocus-heading'>
+         <div className='flex gap'>
+            <img src="./images/focus2.png" alt="" />
+            <div>
+               <h1 className='lspace'>FOCUS</h1>
+               <p>all or nothing</p>
+            </div>
+         </div>
           <h1>CLASS X</h1>
-          <h2>REVISION PROGRAM</h2>
           </div>
+
+<div>
+   <h1>FREE GUIDANCE & REVISION PROGRAMS FOR CLASS X</h1>
+</div>
+<p style={{textAlign:'center'}}>REFINING YOUR PREPARATIONS WITH:</p>
+<ul>
           <li>
       
       <div className="col">
-                <p>Smart Mind Mapping</p>
+                <p>SMART MIND MAPS</p>
       </div>
 </li>
           <li>
                     <div className="col">
-                              <p>NCERT Questions</p>
+                              <p>NCERT QUESTIONS</p>
                     </div>
           </li>
         
           <li>
                     <div className="col">
-                              <p>Sample Questions</p>
+                              <p>SAMPLE QUESTIONS</p>
                     </div>
           </li>
          
           <li>
                     <div className="col">
-                              <p><span style={{color:'red'}}>HOTS Question</span></p>
+                              <p><span style={{color:'red'}}>HOTS QUESTIONS</span></p>
                     </div>
           </li>
           <li>
                     <div className="col">
-                              <p>Competency Based Questions</p>
+                              <p>ASSERTIONS_REASON QUESTIONS</p>
                     </div>
+                    </li>
+                    <li>
+                    <div className="col">
+                              <p>CASE BASED QUESTIONS</p>
+                    </div>
+
           </li>
          
-          <li style={{marginTop: '10px'
-          }}>
-                    <div className="col">
-                              <button style={{cursor: 'pointer'}} onClick={()=> window.open(`https://t.me/+mNLn7FyeC2sxZjBl`)}>Join our Community</button>
-                    </div>
-          </li>
        </ul>
-       {/* <div className="image-container">
-          <img src="./images/megaphone.gif" alt="" />
-       </div> */}
+<h1 className='deepfocus-button'>JOIN NOW!</h1>
+      
     </div>
   )
 }

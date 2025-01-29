@@ -556,30 +556,35 @@ h2 {
 }
 .deepfocus h1,
 h2 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #fe5a1d;
   margin: 7px 0;
   padding: 0;
 }
 
-.deepfocus ul {
-  list-style-type: none;
+.deepfocus {
+  border: 2px solid black;
+  color: black;
   text-align: left;
   padding: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: rgba(0, 0, 255, 0.1); /* Transparent blue background */
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  /* background-color: rgba(0, 0, 255, 0.1); */
+  background: #fff;
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.6); /* Glowing effect */
+  /* box-shadow: 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.6);  */
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.deepfocus ul:hover {
-  background-color: rgba(0, 0, 255, 0.2); /* Slightly stronger blue on hover */
+/* .deepfocus:hover {
+  background-color: rgba(0, 0, 255, 0.2);
   box-shadow: 0 0 15px rgba(0, 0, 255, 1), 0 0 25px rgba(0, 0, 255, 0.9);
+} */
+.deepfocus ul {
+  padding: 0 0 0 50px;
 }
 .advertisement {
   display: flex;
@@ -623,4 +628,14 @@ h2 {
 .advertisement a {
   color: white;
   text-decoration: none;
+}
+.deepfocus-heading {
+  justify-content: space-between;
+}
+h1.deepfocus-button {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 4px;
 }
