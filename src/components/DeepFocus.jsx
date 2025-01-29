@@ -42,7 +42,7 @@ const DeepFocus = () => {
           <li style={{marginTop: '10px'
           }}>
                     <div className="col">
-                              <button style={{cursor: 'pointer'}} onClick={()=> window.open(`https://chat.whatsapp.com/Juk5SFpnhAGBLfjV74lOZu`)}>Join our Community</button>
+                              <button style={{cursor: 'pointer'}} onClick={()=> window.open(`https://t.me/+mNLn7FyeC2sxZjBl`)}>Join our Community</button>
                     </div>
           </li>
        </ul>
